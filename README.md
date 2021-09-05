@@ -1,7 +1,10 @@
 # RecSys
 Для использования данного класса, необходимо установить библиотеку LightFM pip install lightfm.
+
 За основу взята библиотека LightFM ссылка на документацию https://making.lyst.com/lightfm/docs/home.html
+
 Файл EDA.ipynb это разведочный анализ.
+
 Файл RecSys.py это класс реализации модели.
 Получить файлы transactions.csv и product.csv можно по ссылке https://www.kaggle.com/c/skillbox-recommender-system/data
 Обученная модель без использования фичей с результатом 0.226 на платформе kaggle можно получить по ссылке https://drive.google.com/drive/folders/1PnBfB0fSDEEd98DryfZVg8nQZhQMV1E8?usp=sharing
