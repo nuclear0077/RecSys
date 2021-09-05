@@ -41,7 +41,7 @@ model = recsys.fit(use_features=False, epochs=110, num_threads=4, verbose=True, 
 
 :param k: количество рекомендуемых товаров, int
 
-predict = recsys.predict_model(user_ids, model=model, n_items=None, patch=None, k=10, k_top=4, use_top_product_to_user=True)
+predict = recsys.predict_model(user_ids=[0,1,100], model=model, n_items=None, patch=None, k=10, k_top=4, use_top_product_to_user=True)
 
 Получение прогноза с загрузкой модели, без обучения, модель должна быть в формате дампа pickle, если установить флаг use_features = True, то в папке с моделью должны также присутствовать два файла product_features.pkl и user_features.pkl 
 
@@ -49,6 +49,6 @@ predict = recsys.predict_model(user_ids, model=model, n_items=None, patch=None, 
 
 recsys = RecSys(transactions,product,use_features=False)
 
-predict = recsys.predict_model(user_ids, n_items=None, patch='/model/', k=10, k_top=4, use_top_product_to_user=True)
+predict = recsys.predict_model(user_ids=[0,1,100], n_items=None, patch='/model/', k=10, k_top=4, use_top_product_to_user=True)
 
 Результат полученный на платформе Kaggle, без использования топа истории покупок и фичей, составляет 0.207 с использованием топа истории покупок составляет 0.226, использование простого ALS 0.128, подход item_to_item 0.119, подход user_to_user 0.117
