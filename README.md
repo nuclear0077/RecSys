@@ -1,4 +1,5 @@
 # RecSys
+Презентация системы https://drive.google.com/file/d/18v-2LaFkk0wZbmKamiMwz6HGUq0Pet4L/view?usp=sharing
 Для использования данного класса, необходимо установить библиотеку LightFM pip install lightfm.
 
 За основу взята библиотека LightFM ссылка на документацию https://making.lyst.com/lightfm/docs/home.html
